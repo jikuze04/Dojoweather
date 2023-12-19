@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forcast</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="navbar flex spacing">
+        <h1>DojoWeather</h1>
+        <ul class="flex cities spacing">
+            <li onclick="citychange()">Burbank</li>
+            <li onclick="citychange()">Chicago</li>
+            <li onclick="citychange()">Dallas</li>
+        </ul>
+    </header>
+    <div class="main flex">
+        <div class="main">
+            <div class="flex edge weatherbar">
+                <h2>San Jose</h2>
+                <form action="weather">
+                    <label> show temperature in </label>
+                    <select onchange="convertTemp(this.value)" name="unit">
+                        <option value="c">°C</option>
+                        <option value="f">°F</option>
+                    </select>
+                </form>
+            </div>
+            <div class="flex spacing weathercard">
+                <div class="card">
+                    <h3>Today</h3>
+                    <img class="weather" src="./imgs/icons/some_rain.png" alt="" />
+                    <p>some rain</p>
+                    <div class="flex spacing">
+                        <p class="high"><span class="temp">24</span>°</p>
+                        <p class="low"><span class="temp">18</span>°</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Tomorrow</h3>
+                    <img class="weather" src="./imgs/icons/some_sun.png" alt="" />
+                    <p>some sun</p>
+                    <div class="flex spacing">
+                        <p class="high"><span class="temp">27</span>°</p>
+                        <p class="low"><span class="temp">19</span>°</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Friday</h3>
+                    <img class="weather" src="./imgs/icons/some_clouds.png" alt="" />
+                    <p>some clouds</p>
+                    <div class="flex spacing">
+                        <p class="high"><span class="temp">21</span>°</p>
+                        <p class="low"><span class="temp">16</span>°</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Saturday</h3>
+                    <img class="weather" src="./imgs/icons/some_sun.png" alt="" />
+                    <p>some sun</p>
+                    <div class="flex spacing">
+                        <p class="high"><span class="temp">26</span>°</p>
+                        <p class="low"><span class="temp">21</span>°</p>
+                    </div>
+                </div>
+            </div>
+            <div id="cookie" class="flex">
+                <div class="flex cookiebar">
+                    <img src="./imgs/icons/cookie.png" alt="" />
+                    <div class="infocookie">
+                        <h4>Stop! Cookie time</h4>
+                        <p>
+                            We use cookies (sadly not the edible ones) to
+                            personalize contnet and ads, to provide social
+                            media features and to analyse our traffic
+                            <a href="">Read more...</a>
+                        </p>
+                    </div>
+                    <button onclick="acceptcookie('cookie')">
+                        I Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </div>
+</body>
+
+</html>

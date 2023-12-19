@@ -1,0 +1,107 @@
+/* Systems */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.spacing{
+    justify-content: space-around;
+}
+.edge{
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
+}
+
+button{
+    width: 80px;
+}
+/* Systems END */
+
+/* Navbar */
+.weather{
+    width: 80%;
+    border-radius: 100px;
+}
+
+.navbar{
+    background-color: #9fc5f8;
+    color: white;
+    width: auto;
+    height: 50px;
+}
+
+.cities{
+    width: 250px;
+}
+
+/* Navbar ENDS */
+
+/* Main page */
+.weatherbar{
+    padding: 0 20px;
+    border-bottom: 2px black solid;
+}
+
+.main{
+    padding: 20px 5px;
+    justify-content: center;
+    
+    align-items: center;
+}
+/* Main page ENDS */
+
+/* Card info */
+.weathercard{
+    margin: 20px 0;
+    padding: 0 20px;
+}
+.card{
+    border: 1px black solid;
+    text-align: center;
+    width: 80%;
+    line-height: 2.5;
+    background-color: #eeeeee;
+    
+}
+
+.card > p{
+    font-size: 100%;
+    font-size: large;
+}
+.high{
+    color: red;
+    font-size: 20px;
+}
+.low{
+    color: blue;
+    font-size: 20px;
+}
+
+/* Card info ENDS */
+
+/* Cookie Bar */
+.cookiebar{
+    padding: 5px 5px;
+    background-color: aliceblue;
+    width: 95%;
+    border: 2px black solid;
+    position: fixed;
+    bottom: 10px;
+    align-items: center;
+}
+.infocookie{
+    width: 75%;
+    margin: 0px 10px;
+}
